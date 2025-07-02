@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="KaMark14, Kauã Marques, @kamarques_14">
+    <title>Inscreva-se na Nossa Newsletter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-envelope-open-text"></i>
+                <span>NewsletterPro</span>
+            </div>
+            <nav>
+                <a href="#" style="color: white; text-decoration: none; font-weight: 600;">Sobre Nós</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-info">
+                    <h1>Fique por dentro das novidades!</h1>
+                    <p>Assine nossa newsletter e receba conteúdos exclusivos, promoções e atualizações diretamente no
+                        seu e-mail.</p>
+
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> Conteúdos exclusivos para assinantes</li>
+                        <li><i class="fas fa-check-circle"></i> Promoções e descontos especiais</li>
+                        <li><i class="fas fa-check-circle"></i> Novidades em primeira mão</li>
+                        <li><i class="fas fa-check-circle"></i> Sem spam - só conteúdo relevante</li>
+                    </ul>
+                </div>
+
+                <div class="newsletter-form">
+                    <div id="successMessage" class="success-message">
+                        <i class="fas fa-check-circle"></i> Inscrição realizada com sucesso! Verifique seu e-mail.
+                    </div>
+
+                    <div id="errorMessage" class="error-message">
+                        <i class="fas fa-exclamation-circle"></i> Ocorreu um erro. Por favor, tente novamente.
+                    </div>
+
+                    <form id="subscriptionForm">
+                        <div class="form-group">
+                            <label for="name">Seu Nome</label>
+                            <input type="text" id="name" class="form-control" placeholder="Digite seu nome completo"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Seu Melhor E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="exemplo@email.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interests">Seus Interesses (opcional)</label>
+                            <select id="interests" class="form-control">
+                                <option value="">Selecione...</option>
+                                <option value="tecnologia">Tecnologia</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="design">Design</option>
+                                <option value="negocios">Negócios</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn" id="submitBtn">
+                                <span id="btnText">Assinar Newsletter</span>
+                                <span id="btnLoading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> Processando...
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="form-footer">
+                            Ao se inscrever, você concorda com nossos <a href="#">Termos de Serviço</a> e <a
+                                href="#">Política de Privacidade</a>.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">&#xae; 2025 NewsletterPro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="JS/script.js"></script>
+
+</html>
